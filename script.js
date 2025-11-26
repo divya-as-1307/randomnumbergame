@@ -14,7 +14,7 @@ function checkthenumber(){
     if(randomnumber==inpbox.value){
         alert("You guessed right!! The generated randomnumber is: "+randomnumber)
          result.textContent="You are Right!"
-          btn.disabled=true
+          btn.disabled=true;
     }
 
     else{
@@ -22,7 +22,7 @@ function checkthenumber(){
         if(guesscount==0)
         {
             alert("Oops.. You lost the Game! Better luck next time!!")
-            btn.disabled=true
+            btn.disabled=true;
             
         }
         noofguess.textContent = "Available Guesses: "+ guesscount
