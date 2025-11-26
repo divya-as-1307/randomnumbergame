@@ -14,6 +14,7 @@ function checkthenumber(){
     if(randomnumber==inpbox.value){
         alert("You guessed right!! The generated randomnumber is: "+randomnumber)
          result.textContent="You are Right!"
+          btn.disabled=true
     }
 
     else{
