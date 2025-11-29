@@ -15,9 +15,16 @@ function checkthenumber(){
         alert("Please enter a number!");
         return;
     }
-    
+
+       if (inpbox.value > 5) {
+        alert("Please enter a number from 1 to 5!");
+        inpbox.value = "";
+        return;
+    }
+
+
     if(randomnumber==inpbox.value){
-        alert("You guessed right!! The generated randomnumber is: "+randomnumber)
+        alert("You guessed right!!")
          result.textContent="You are Right!"
           btn.disabled=true;
     }
@@ -26,7 +33,7 @@ function checkthenumber(){
         guesscount=guesscount-1
         if(guesscount==0)
         {
-            alert("Oops.. You lost the Game! Better luck next time!!")
+            alert("Oops.. You lost the Game! Better luck next time!! The gnerated random number is: "+randomnumber)
             btn.disabled=true;
             
         }
