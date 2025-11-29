@@ -11,6 +11,11 @@ var randomnumber =Math.floor( Math.random()*5)+1
 //checking random number
 
 function checkthenumber(){
+     if (inpbox.value === "") {
+        alert("Please enter a number!");
+        return;
+    }
+    
     if(randomnumber==inpbox.value){
         alert("You guessed right!! The generated randomnumber is: "+randomnumber)
          result.textContent="You are Right!"
