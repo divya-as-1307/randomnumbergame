@@ -28,6 +28,7 @@ function checkthenumber(){
         noofguess.textContent = "Available Guesses: "+ guesscount
         result.textContent="You are Wrong!"
     }
+    inpbox.value = "";
 }
 
 //restarting the game
